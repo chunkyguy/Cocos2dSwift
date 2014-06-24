@@ -1,7 +1,7 @@
 Cocos2dSwift
 ============
 
-Getting started with Cocos2d with Swift. Read the article here http://whackylabs.com/rants/?p=1053 or just download the code and start playing. There isn't much to it.
+Getting started with Cocos2d with Swift. Read [the article](http://whackylabs.com/rants/?p=1053) or just download the code and start playing. There isn't much to it.
 
 Change Log
 -----------
