@@ -639,6 +639,8 @@
 		191E68991959541B000F4442 /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroScene.swift; path = Classes/IntroScene.swift; sourceTree = "<group>"; };
 		191E689A1959541B000F4442 /* HelloWorldScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloWorldScene.swift; path = Classes/HelloWorldScene.swift; sourceTree = "<group>"; };
 		191E689B1959541B000F4442 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = Classes/Main.swift; sourceTree = "<group>"; };
+		19B199BA19595F8800C9F348 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		19B199BB19595F8800C9F348 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1501,6 +1503,8 @@
 		191E686E195952C5000F4442 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				19B199BA19595F8800C9F348 /* LICENSE */,
+				19B199BB19595F8800C9F348 /* README.md */,
 				191E686F195952C5000F4442 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -1967,6 +1971,7 @@
 				191E6880195952C5000F4442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191E6881195952C5000F4442 /* Build configuration list for PBXNativeTarget "ObjectiveChipmunk" */ = {
 			isa = XCConfigurationList;
@@ -1975,6 +1980,7 @@
 				191E6883195952C5000F4442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

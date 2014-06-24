@@ -12,7 +12,6 @@ import Foundation
 
     override func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool
     {
-        println("didFinishLaunchingWithOptions")
         setupCocos2dWithOptions([CCSetupShowDebugStats: true])
         
         return true
