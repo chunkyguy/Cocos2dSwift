@@ -53,7 +53,10 @@
 #define glMapBuffer					glMapBufferOES
 #define glUnmapBuffer				glUnmapBufferOES
 
-#define GL_DEPTH24_STENCIL8			GL_DEPTH24_STENCIL8_OES
+#ifndef GL_DEPTH24_STENCIL8
+    #define GL_DEPTH24_STENCIL8			GL_DEPTH24_STENCIL8_OES
+#endif
+
 #define GL_WRITE_ONLY				GL_WRITE_ONLY_OES
 
 // Mac
