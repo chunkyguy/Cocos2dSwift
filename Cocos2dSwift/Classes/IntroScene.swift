@@ -15,10 +15,6 @@ import Foundation
 *
 */
 class IntroScene : CCScene {
-    class func scene() -> (IntroScene)
-    {
-        return IntroScene()
-    }
     
     init()
     {
@@ -31,15 +27,15 @@ class IntroScene : CCScene {
         
         // Hello world
         let label:CCLabelTTF = CCLabelTTF(string: "Hello World", fontName: "Chalkduster", fontSize: 36.0)
-        label.positionType = CCPositionTypeMake(CCPositionUnit.Normalized, CCPositionUnit.Normalized, CCPositionReferenceCorner.BottomLeft)
+        label.positionType = CCPositionType.Normalized
         label.color = CCColor.redColor()
-        label.position = CGPointMake(0.5, 0.5) // Middle of screen
+        label.position = CGPoint(x: 0.5, y: 0.5) // Middle of screen
         addChild(label)
         
         // Helloworld scene button
         let helloWorldButton:CCButton = CCButton(title: "[ Start ]", fontName: "Verdana-Bold", fontSize: 18.0)
-        helloWorldButton.positionType = CCPositionTypeMake(CCPositionUnit.Normalized, CCPositionUnit.Normalized, CCPositionReferenceCorner.BottomLeft)
-        helloWorldButton.position = CGPointMake(0.5, 0.35)
+        helloWorldButton.positionType = CCPositionType.Normalized
+        helloWorldButton.position = CGPoint(x: 0.5, y: 0.35)
         helloWorldButton.setTarget(self, selector: "onSpinningClicked:")
         addChild(helloWorldButton)
         
@@ -48,6 +44,6 @@ class IntroScene : CCScene {
     func onSpinningClicked(sender:AnyObject)
     {
         // start spinning scene with transition
-        CCDirector.sharedDirector().replaceScene(HelloWorldScene.scene(), withTransition: CCTransition(pushWithDirection: CCTransitionDirection.Left, duration: 1.0))
+        CCDirector.sharedDirector().replaceScene(HelloWorldScene(), withTransition: CCTransition(pushWithDirection: CCTransitionDirection.Left, duration: 1.0))
     }
 }

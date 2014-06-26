@@ -1,3 +1,4 @@
+
 //
 //  HelloWorldScene.swift
 //  TapSoccer
@@ -14,12 +15,7 @@ import Foundation
 class HelloWorldScene : CCScene {
     
     let _sprite:CCSprite?
-    
-    class func scene() -> HelloWorldScene
-    {
-        return HelloWorldScene()
-    }
-    
+        
     init()
     {
         super.init()
@@ -33,8 +29,8 @@ class HelloWorldScene : CCScene {
         
         // Add a sprite
         _sprite = CCSprite(imageNamed: "Icon-72.png")
-        _sprite!.position  = CGPointMake(contentSize.width/2.0, contentSize.height/2.0)
-        //        _sprite!.position  = ccp(self.contentSize.width/2,self.contentSize.height/2)
+
+        _sprite!.position = CGPoint(x: self.contentSize.width/2, y: self.contentSize.height/2)
         addChild(_sprite)
         
         // Animate sprite with action
@@ -43,9 +39,9 @@ class HelloWorldScene : CCScene {
         
         // Create a back button
         let backButton:CCButton = CCButton(title: "[ Menu ]", fontName: "Verdana-Bold", fontSize: 18.0)
-        backButton.positionType = CCPositionTypeMake(CCPositionUnit.Normalized, CCPositionUnit.Normalized, CCPositionReferenceCorner.BottomLeft)
-        backButton.position = CGPointMake(0.85, 0.95)
-        //ccp(0.85, 0.95); // Top Right of screen
+        backButton.positionType = CCPositionType.Normalized
+//            CCPositionTypeMake(CCPositionUnit.Normalized, CCPositionUnit.Normalized, CCPositionReferenceCorner.BottomLeft)
+        backButton.position = CGPoint(x: 0.85, y: 0.95) // Top Right of screen
         backButton.setTarget(self, selector: "onBackClicked:")
         addChild(backButton)
         
@@ -87,7 +83,7 @@ class HelloWorldScene : CCScene {
     func onBackClicked(sender:AnyObject)
     {
         // back to intro scene with transition
-        CCDirector.sharedDirector().replaceScene(IntroScene.scene(), withTransition: CCTransition(pushWithDirection: CCTransitionDirection.Right, duration: 1.0))
+        CCDirector.sharedDirector().replaceScene(IntroScene(), withTransition: CCTransition(pushWithDirection: CCTransitionDirection.Right, duration: 1.0))
         
     }
 }

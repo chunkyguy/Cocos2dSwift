@@ -211,6 +211,7 @@
 		191E689C1959541B000F4442 /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E68991959541B000F4442 /* IntroScene.swift */; };
 		191E689D1959541B000F4442 /* HelloWorldScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E689A1959541B000F4442 /* HelloWorldScene.swift */; };
 		191E689E1959541B000F4442 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E689B1959541B000F4442 /* Main.swift */; };
+		19462872195C1B6E006B04AB /* CCCMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19462871195C1B6E006B04AB /* CCCMacros.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -639,6 +640,7 @@
 		191E68991959541B000F4442 /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroScene.swift; path = Classes/IntroScene.swift; sourceTree = "<group>"; };
 		191E689A1959541B000F4442 /* HelloWorldScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelloWorldScene.swift; path = Classes/HelloWorldScene.swift; sourceTree = "<group>"; };
 		191E689B1959541B000F4442 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = Classes/Main.swift; sourceTree = "<group>"; };
+		19462871195C1B6E006B04AB /* CCCMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CCCMacros.swift; path = Classes/CCCMacros.swift; sourceTree = "<group>"; };
 		19B199BA19595F8800C9F348 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		19B199BB19595F8800C9F348 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -1517,6 +1519,7 @@
 				191E689A1959541B000F4442 /* HelloWorldScene.swift */,
 				191E689B1959541B000F4442 /* Main.swift */,
 				191E68981959541A000F4442 /* Cocos2dSwift-Bridging-Header.h */,
+				19462871195C1B6E006B04AB /* CCCMacros.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1713,6 +1716,7 @@
 				191E6754195952C3000F4442 /* OALAudioTrack.m in Sources */,
 				191E6697195952C1000F4442 /* CCProgressNode.m in Sources */,
 				191E668A195952C1000F4442 /* CCPhysicsBody.m in Sources */,
+				19462872195C1B6E006B04AB /* CCCMacros.swift in Sources */,
 				191E670F195952C2000F4442 /* CCWindow.m in Sources */,
 				191E6624195952BF000F4442 /* CCActionProgressTimer.m in Sources */,
 				191E67DA195952C4000F4442 /* plane.c in Sources */,

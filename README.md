@@ -6,7 +6,16 @@ Getting started with Cocos2d with Swift. Read [the article](http://whackylabs.co
 Change Log
 -----------
 
-1. All places where we used the handly MACRO to create CGPoint
+26/06/14
+
+- Add CCCMacros.swift for a common place for workarouds for all C MACROs.
+
+- I honestly think CGPoint(x: 0.85, y: 0.95) is better than ccp(0.85, 0.95). Because it tells straight away what is getting created and how. IMO ccp() should retire.
+
+
+24/06/14
+
+- All places where we used the handly MACRO to create CGPoint
 ```[objc]
 backButton.position = ccp(0.85, 0.95);
 ```
@@ -14,7 +23,7 @@ is replaced with the full function. For some reasons this was throwing linking e
 ```
 backButton.position = CGPointMake(0.85, 0.95)
 ```
-2. The position type which is again a C MACRO isn't working anymore
+- The position type which is again a C MACRO isn't working anymore
 ```[objc]
 label.positionType = CCPositionTypeNormalized;
 ```
@@ -22,7 +31,7 @@ the replacement is to use the full form.
 ```
 label.positionType = CCPositionTypeMake(CCPositionUnit.Normalized, CCPositionUnit.Normalized, CCPositionReferenceCorner.BottomLeft)
 ```
-3. Using class methods to create Scenes seems rather awkward with Swift
+- Using class methods to create Scenes seems rather awkward with Swift
 ```[objc]
 + (IntroScene *)scene
 {

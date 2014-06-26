@@ -19,6 +19,6 @@ import Foundation
     
     override func startScene() -> (CCScene)
     {
-        return HelloWorldScene.scene()
+        return HelloWorldScene()
     }
 }
